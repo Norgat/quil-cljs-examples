@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quil ClojureScript examples</title>
+    <script type="text/javascript" src="js/processing.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+    	function quil_init () {
+    		quil_cljs_examples.lines.example1();
+    		quil_cljs_examples.circles.example2();
+    	}
+    </script>
+</head>
+<body onload="quil_init();">
+<div id="content">
+
+	<div id="examples">
+		<canvas id="example1" class="example"></canvas>
+		<div>
+			<p><strong><big>Example 1</big></strong></p>
+			<p>Source file: lines.cljs</p>
+			<p>Click on the sketch to stop it.</p>
+		</div>
+	</div>
+
+	<div id="examples">
+		<canvas id="example2" class="example"></canvas>
+		<div>
+			<p><strong><big>Example 2</big></strong></p>
+			<p>Source file: circles.cljs</p>
+			<p>Click on the sketch to draw circle.</p>
+			<button onclick="quil_cljs_examples.circles.clean_sketch()">Clean sketch</button>
+		</div>
+	</div>		
+</div>
+</body>
+</html>

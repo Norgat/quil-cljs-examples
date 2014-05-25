@@ -1,0 +1,24 @@
+
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 3%;	 
+}
+
+#content {
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 12px;
+}
+
+#examples {
+	height: 320px;
+}
+
+canvas.example {
+	float: left;
+	padding: 0 10px 10px 0;
+	width: 300px;
+	height: 300px;
+}
