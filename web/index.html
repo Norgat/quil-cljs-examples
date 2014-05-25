@@ -9,6 +9,7 @@
     	function quil_init () {
     		quil_cljs_examples.lines.example1();
     		quil_cljs_examples.circles.example2();
+    		quil_cljs_examples.image.example3();
     	}
     </script>
 </head>
@@ -33,6 +34,16 @@
 			<button onclick="quil_cljs_examples.circles.clean_sketch()">Clean sketch</button>
 		</div>
 	</div>		
+
+	<div id="examples">
+		<canvas id="example3" class="example"></canvas>
+		<div>
+			<p><strong><big>Example 3</big></strong></p>
+			<p>Source file: image.cljs</p>
+			<input id="ex3_url" type="text" value="">
+			<button onclick="quil_cljs_examples.image.reload_image()">Reload image</button>
+		</div>
+	</div>
 </div>
 </body>
 </html>
