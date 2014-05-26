@@ -16,5 +16,4 @@
              :compiler
              {:output-to "web/js/main.js"
               :optimizations :whitespace
-              :libs ["processing.js"]
               :pretty-print true}}]})
