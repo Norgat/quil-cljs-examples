@@ -1,6 +1,6 @@
 (ns quil-cljs-examples.box
 	(:require [quil.core :as q])
-	(:use-macros [quil.sketch :only [defsketch]]
+	(:use-macros [quil.core :only [defsketch]]
 				 [quil.helpers.tools :only [with-shape]]))
 
 

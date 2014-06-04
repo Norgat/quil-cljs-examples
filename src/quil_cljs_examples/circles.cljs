@@ -1,6 +1,7 @@
 (ns quil-cljs-examples.circles
 	(:require [quil.core :as q])
-	(:use-macros [quil.sketch :only [defsketch with-sketch]]))
+	(:use-macros [quil.sketch :only [with-sketch]]
+				 [quil.core :only [defsketch]]))
 
 
 (def host "example2")
