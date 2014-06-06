@@ -5,7 +5,9 @@
 (defn draw []
 	(q/background 255)
 	(q/fill 0)
-	(q/text "hello world" 25 25))
+
+	(q/text (str (q/day) "." (q/month) "." (q/year) " " (q/hour) ":" (q/minute) ":" (q/seconds))
+		25 25))
 
 
 (defsketch text-example
