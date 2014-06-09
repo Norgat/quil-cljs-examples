@@ -7,6 +7,11 @@
 	(q/background 255)
 	(q/no-fill)
 	(q/stroke 0)
+	
+	(q/curve-tightness 3.5)
+	(q/curve 5 26 73 24 73 61 15 65)
+
+	(q/curve-tightness 0.0)
 	(q/curve 5 26 73 24 73 61 15 65)
 	(doseq [i (range 6)]
 		(let [t (/ i 6.0)
