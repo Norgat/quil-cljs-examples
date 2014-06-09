@@ -2,16 +2,21 @@
 	(:require [quil.core :as q])
 	(:use-macros [quil.core :only [defsketch with-graphics]]))
 
+(def g (atom nil))
+
+(defn setup []
+	(reset! g (q/create-graphics 100 100 :p3d)))
+
 
 (defn draw []
 	(q/background 255)
-	(let [g (q/create-graphics 100 100 :p2d)]
-		(with-graphics g
-			(q/background 102))
-		(q/image g 10 10)))
+	(with-graphics @g
+		(q/background 102))
+	(q/image @g 10 10))
 
 
 (defsketch graphics
 	:host "graphics"
 	:draw draw
+	:setup setup
 	:size [300 300])
