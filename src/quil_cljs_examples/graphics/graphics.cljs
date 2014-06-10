@@ -11,7 +11,8 @@
 (defn draw []
 	(q/background 255)
 	(with-graphics @g
-		(q/background 102))
+		(q/background 102)
+		(q/line 0 0 100 100))
 	(q/image @g 10 10))
 
 
