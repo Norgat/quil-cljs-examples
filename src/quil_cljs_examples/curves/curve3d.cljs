@@ -1,4 +1,4 @@
-(ns quil-cljs-examples.curve3d
+(ns quil-cljs-examples.curves.curve3d
 	(:require [quil.core :as q])
 	(:use-macros [quil.core :only [defsketch]]))
 

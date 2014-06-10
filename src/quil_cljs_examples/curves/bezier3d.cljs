@@ -1,4 +1,4 @@
-(ns quil-cljs-examples.bezier3d
+(ns quil-cljs-examples.curves.bezier3d
 	(:require [quil.core :as q])
 	(:use-macros [quil.core :only [defsketch]]))
 

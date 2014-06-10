@@ -1,4 +1,4 @@
-(ns quil-cljs-examples.graphics
+(ns quil-cljs-examples.graphics.graphics
 	(:require [quil.core :as q])
 	(:use-macros [quil.core :only [defsketch with-graphics]]))
 
