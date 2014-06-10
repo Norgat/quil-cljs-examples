@@ -5,7 +5,8 @@
 (def img (atom nil))
 
 (defn setup []
-	(reset! img (q/create-image 50 50 :rgb)))
+	(reset! img (q/create-image 50 50 :rgb))
+	(q/set-pixel @img 10 10 (q/color 0 90 102)))
 
 
 (defn draw []
