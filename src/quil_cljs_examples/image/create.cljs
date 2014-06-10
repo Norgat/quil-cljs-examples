@@ -10,7 +10,8 @@
 	(q/set-pixel @img 10 10 (q/color 0 90 102))
 
 	(reset! new-img (q/create-image 50 50 :rgb))
-	(q/copy @img @new-img [0 0 50 50] [0 0 50 50]))
+	(q/copy @img @new-img [0 0 50 50] [0 0 50 50])
+	(q/resize @new-img 25 25))
 
 
 (defn draw []
