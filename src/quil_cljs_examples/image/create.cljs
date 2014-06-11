@@ -17,7 +17,8 @@
 (defn draw []
 	(q/background 255)
 	(q/image @img 20 20)
-	(q/image @new-img 120 120))
+	(q/image @new-img 120 120)
+	(q/display-filter :invert))
 
 
 (defsketch create-image
