@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Child</title>
+	<script type="text/javascript" src="js/processing.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		function foo() {
+			var childNodes = document.body.childNodes;
+			return (childNodes.length == 1);
+		}
+
+		function baz () {
+			if (quil.sketch.check_empty_body()) {
+				var div = document.createElement('div');
+				var txt = document.createTextNode("Test message");
+				div.appendChild(txt);
+				document.body.appendChild(div);
+			}
+		}
+	</script>
+</head>
+<body>
+Not all sketches works fine in this mode!
+</body>
+</html>
