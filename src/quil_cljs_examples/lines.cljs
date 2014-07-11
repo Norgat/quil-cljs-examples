@@ -16,10 +16,9 @@
 	(q/line (mod (q/millis) 300) (mod (q/millis) 300)
 		    300 150))
 
-
 (defsketch example1
 	:draw draw
-	:host "example1"
+	:host "lines"
 	:size [300 300]
 	:mouse-pressed q/no-loop
 	:mouse-released q/start-loop)

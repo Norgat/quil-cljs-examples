@@ -1,5 +1,6 @@
 (ns quil-cljs-examples.box
-	(:require [quil.core :as q])
+	(:require [quil.core :as q]
+						[quil.middleware :as m])
 	(:use-macros [quil.core :only [defsketch]]
 				 [quil.helpers.tools :only [with-shape]]))
 
@@ -18,4 +19,5 @@
 	:host "example4"
 	:draw draw
 	:renderer :opengl
+	:middleware [m/fun-mode m/navigation-3d]
 	:size [300 300])

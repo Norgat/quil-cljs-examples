@@ -17,7 +17,7 @@
 		(q/image gr 10 10)
 
 		(let [px (q/pixels gr)
-			  arr (.toArray px)]
+			  	arr (.toArray px)]
 			(when (nil? @a)
 				(reset! a arr)
 				(reset! b px)

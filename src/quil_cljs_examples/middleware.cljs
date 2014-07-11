@@ -1,6 +1,6 @@
 (ns quil-cljs-examples.middleware
 	(:require [quil.core :as q]
-			  [quil.middleware :as m])
+			  		[quil.middleware :as m])
 	(:use-macros [quil.sketch :only [with-sketch]]
 				 [quil.core :only [defsketch]]))
 
