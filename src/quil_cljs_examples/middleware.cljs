@@ -1,8 +1,6 @@
 (ns quil-cljs-examples.middleware
-	(:require [quil.core :as q]
-			  		[quil.middleware :as m])
-	(:use-macros [quil.sketch :only [with-sketch]]
-				 [quil.core :only [defsketch]]))
+	(:require [quil.core :as q :include-macros true]
+			  		[quil.middleware :as m]))
 
 (defn setup []
 	{:x 100 :y 100})
@@ -11,7 +9,7 @@
 	(q/background 255)
 	(q/line 0 0 (:x state) (:y state)))
 
-(defsketch middleware
+(q/defsketch middleware
 	:draw draw
 	:setup setup
 	:size [300 300]

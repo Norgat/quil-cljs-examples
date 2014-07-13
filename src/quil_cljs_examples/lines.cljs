@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.lines
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch]]))
+	(:require [quil.core :as q :include-macros true]))
 
 
 (defn draw []
@@ -16,7 +15,7 @@
 	(q/line (mod (q/millis) 300) (mod (q/millis) 300)
 		    300 150))
 
-(defsketch example1
+(q/defsketch example1
 	:draw draw
 	:host "lines"
 	:size [300 300]

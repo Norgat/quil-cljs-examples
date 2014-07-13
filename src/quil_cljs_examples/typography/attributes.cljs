@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.typography.attributes
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch with-graphics]]))
+	(:require [quil.core :as q :include-macros true]))
 
 (def lines "LIN1\nLIN2\nLIN3")
 
@@ -37,7 +36,7 @@
 	(text-leading))
 
 
-(defsketch typography-attributes
+(q/defsketch typography-attributes
 	:host "typography-attributes"
 	:draw draw
 	:size [300 300])

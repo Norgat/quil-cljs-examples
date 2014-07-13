@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.curves.bezier3d
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch]]))
+	(:require [quil.core :as q :include-macros true]))
 
 
 (defn draw []
@@ -13,7 +12,7 @@
 		(q/bezier 85 20 0 10 10 0 90 90 0 15 80 0)))
 
 
-(defsketch bezier3d
+(q/defsketch bezier3d
 	:host "bezier3d"
 	:draw draw
 	:renderer :p3d
