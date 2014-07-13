@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.typography.metrics
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch with-graphics]]))
+	(:require [quil.core :as q :include-macros true]))
 
 
 (defn draw []
@@ -28,7 +27,7 @@
 		    250 (+ 70 (q/text-descent))))
 
 
-(defsketch typography-metrics
+(q/defsketch typography-metrics
 	:host "typography-metrics"
 	:draw draw
 	:size [300 300])

@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.graphics.graphics
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch with-graphics]]))
+	(:require [quil.core :as q :include-macros true]))
 
 (def g (atom nil))
 
@@ -10,13 +9,13 @@
 
 (defn draw []
 	(q/background 255)
-	(with-graphics @g
+	(q/with-graphics @g
 		(q/background 102)
 		(q/line 0 0 100 100))
 	(q/image @g 10 10))
 
 
-(defsketch graphics
+(q/defsketch graphics
 	:host "graphics"
 	:draw draw
 	:setup setup

@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.image.create
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch with-graphics]]))
+	(:require [quil.core :as q :include-macros true]))
 
 (def img (atom nil))
 (def new-img (atom nil))
@@ -21,7 +20,7 @@
 	(q/display-filter :invert))
 
 
-(defsketch create-image
+(q/defsketch create-image
 	:host "create-image"
 	:draw draw
 	:setup setup

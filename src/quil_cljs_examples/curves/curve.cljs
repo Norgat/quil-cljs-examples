@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.curves.curve
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch]]))
+	(:require [quil.core :as q :include-macros true]))
 
 
 (defn draw []
@@ -25,7 +24,7 @@
 			  (q/line x y x2 y2))))
 
 
-(defsketch curve
+(q/defsketch curve
 	:host "curve"
 	:draw draw
 	:size [300 300])

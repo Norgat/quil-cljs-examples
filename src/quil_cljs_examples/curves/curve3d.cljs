@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.curves.curve3d
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch]]))
+	(:require [quil.core :as q :include-macros true]))
 
 
 (defn draw-curves [shift]
@@ -26,7 +25,7 @@
 	(draw-curves 15))
 
 
-(defsketch curve3d
+(q/defsketch curve3d
 	:host "curve3d"
 	:draw draw
 	:renderer :p3d

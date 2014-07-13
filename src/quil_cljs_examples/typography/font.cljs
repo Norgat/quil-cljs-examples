@@ -1,6 +1,5 @@
 (ns quil-cljs-examples.typography.font
-	(:require [quil.core :as q])
-	(:use-macros [quil.core :only [defsketch with-graphics]]))
+	(:require [quil.core :as q :include-macros true]))
 
 
 (defn draw []
@@ -12,7 +11,7 @@
 		(q/text "The quick bro" 15 50)))
 
 
-(defsketch typography-font
+(q/defsketch typography-font
 	:host "typography-font"
 	:draw draw
 	:size [300 300])
